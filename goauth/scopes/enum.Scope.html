@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Scope` enum in crate `goauth`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Scope">
+
+    <title>goauth::scopes::Scope - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>goauth</a>::<wbr><a href='index.html'>scopes</a></p><script>window.sidebarCurrent = {name: 'Scope', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content enum">
+<h1 class='fqn'><span class='in-band'>Enum <a href='../index.html'>goauth</a>::<wbr><a href='index.html'>scopes</a>::<wbr><a class='enum' href=''>Scope</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/goauth/scopes.rs.html#5-203' title='goto source code'>[src]</a></span></h1>
+<pre class='rust enum'>pub enum Scope {
+    Activity,
+    AdexchangeBuyer,
+    AdexchangeSeller,
+    AdexchangeSellerReadOnly,
+    AdminDataTransfer,
+    AdminDataTransferReadOnly,
+    AdminDirectoryCustomer,
+    AdminDirectoryCustomerReadOnly,
+    AdminDirectoryDeviceChromeOs,
+    AdminDirectoryDeviceChromeOsReadOnly,
+    AdminDirectoryDeviceMobile,
+    AdminDirectoryDeviceMobileAction,
+    AdminDirectoryDeviceMobileReadOnly,
+    AdminDirectoryDomain,
+    AdminDirectoryDomainReadOnly,
+    AdminDirectoryGroup,
+    AdminDirectoryGroupMember,
+    AdminDirectoryGroupMemberReadOnly,
+    AdminDirectoryGroupReadOnly,
+    AdminDirectoryNotifications,
+    AdminDirectoryOrgUnit,
+    AdminDirectoryOrgUnitReadOnly,
+    AdminDirectoryResourceCalendar,
+    AdminDirectoryResourceCalendarReadOnly,
+    AdminDirectoryRoleManagement,
+    AdminDirectoryRoleManagementReadOnly,
+    AdminDirectoryUser,
+    AdminDirectoryUserAlias,
+    AdminDirectoryUserAliasReadOnly,
+    AdminDirectoryUserReadOnly,
+    AdminDirectoryUserSchema,
+    AdminDirectoryUserSchemaReadOnly,
+    AdminDirectoryUserSecurity,
+    AdminReportsAuditReadOnly,
+    AdminReportsUsageReadOnly,
+    AdSense,
+    AdSenseHost,
+    AdSenseReadOnly,
+    Analytics,
+    AnalyticsEdit,
+    AnalyticsManageUsers,
+    AnalyticsManageUsersReadOnly,
+    AnalyticsProvision,
+    AnalyticsReadOnly,
+    AndroidEnterprise,
+    AndroidPublisher,
+    AppEngineAdmin,
+    AppsGroupsMigration,
+    AppsGroupsSettings,
+    AppsLicensing,
+    AppsOrder,
+    AppsOrderReadOnly,
+    AppState,
+    BigQuery,
+    BigQueryInsertdata,
+    Blogger,
+    BloggerReadOnly,
+    Books,
+    Calendar,
+    CalendarFeeds,
+    CalendarReadOnly,
+    ClassroomCourses,
+    ClassroomCoursesReadOnly,
+    ClassroomCourseworkMe,
+    ClassroomCourseworkMeReadOnly,
+    ClassroomCourseWorkReadOnly,
+    ClassroomCourseworkStudents,
+    ClassroomCourseworkStudentsReadOnly,
+    ClassroomProfileEmails,
+    ClassroomProfilePhotos,
+    ClassroomRosters,
+    ClassroomRostersReadOnly,
+    ClassroomStudentSubmissionsMeReadOnly,
+    ClassroomStudentSubmissionsStudentsReadOnly,
+    CloudDebugger,
+    CloudPlatform,
+    CloudPlatformReadOnly,
+    CloudRuntimeConfig,
+    CloudUserAccounts,
+    CloudUserAccountsReadOnly,
+    Compute,
+    ComputeReadOnly,
+    Contacts,
+    ContactsReadOnly,
+    Content,
+    DataStore,
+    Ddmconversions,
+    DevStorageFullControl,
+    DevStorageReadOnly,
+    DevStorageReadWrite,
+    Dfareporting,
+    Dfatrafficking,
+    DoubleclickSearch,
+    Drive,
+    DriveAppdata,
+    DriveFile,
+    DriveMetadata,
+    DriveMetadataReadOnly,
+    DrivePhotosReadOnly,
+    DriveReadOnly,
+    DriveScripts,
+    Firebase,
+    FirebaseReadOnly,
+    FitnessActivityRead,
+    FitnessActivityWrite,
+    FitnessBodyRead,
+    FitnessBodyWrite,
+    FitnessLocationRead,
+    FitnessLocationWrite,
+    FitnessNutritionRead,
+    FitnessNutritionWrite,
+    Forms,
+    FormsCurrentOnly,
+    FusionTables,
+    FusionTablesReadOnly,
+    Games,
+    Genomics,
+    GenomicsReadOnly,
+    GlassLocation,
+    GlassTimeline,
+    Gmail,
+    GmailCompose,
+    GmailInsert,
+    GmailLabels,
+    GmailMetadata,
+    GmailModify,
+    GmailReadOnly,
+    GmailSend,
+    GmailSettingsBasic,
+    GmailSettingsSharing,
+    Groups,
+    LoggingAdmin,
+    LoggingRead,
+    LoggingWrite,
+    M8Feeds,
+    ManufacturerCenter,
+    Monitoring,
+    MonitoringRead,
+    MonitoringWrite,
+    NdevClouddnsReadOnly,
+    NdevClouddnsReadwrite,
+    NdevCloudman,
+    NdevCloudmanReadOnly,
+    PlayMoviesPartnerReadOnly,
+    PlusCirclesRead,
+    PlusCirclesWrite,
+    PlusLogin,
+    PlusMe,
+    PlusMediaUpload,
+    PlusProfilesRead,
+    PlusStreamRead,
+    PlusStreamWrite,
+    Prediction,
+    Presentations,
+    PresentationsReadOnly,
+    PubSub,
+    ReplicaPool,
+    ReplicaPoolReadOnly,
+    Servicecontrol,
+    ServiceManagement,
+    ServiceManagementReadOnly,
+    SiteVerification,
+    SiteVerificationVerifyOnly,
+    SpreadSheets,
+    SpreadSheetsReadOnly,
+    SQLServiceAdmin,
+    TagManagerDeleteContainers,
+    TagManagerEditContainers,
+    TagManagerEditContainerVersions,
+    TagManagerManageAccounts,
+    TagManagerManageUsers,
+    TagManagerPublish,
+    TagManagerReadOnly,
+    TaskQueue,
+    TaskQueueConsumer,
+    Tasks,
+    TasksReadOnly,
+    TraceAppend,
+    TraceReadOnly,
+    URLShortener,
+    UserAddressesRead,
+    UserBirthdayRead,
+    UserEmailsRead,
+    UserInfoEmail,
+    UserInfoProfile,
+    UserLocationBeaconRegistry,
+    UserPhoneNumbersRead,
+    WebMasters,
+    WebMastersReadOnly,
+    YouTube,
+    YouTubeAnalyticsMonetaryReadOnly,
+    YouTubeAnalyticsReadOnly,
+    YouTubeForceSSL,
+    YouTubepartner,
+    YouTubepartnerChannelAudit,
+    YouTubeReadOnly,
+    YouTubeUpload,
+}</pre><h2 class='variants'>Variants</h2>
+<span id='variant.Activity' class='variant'><span id='Activity.v' class='invisible'><code>Activity</code></span></span><span id='variant.AdexchangeBuyer' class='variant'><span id='AdexchangeBuyer.v' class='invisible'><code>AdexchangeBuyer</code></span></span><span id='variant.AdexchangeSeller' class='variant'><span id='AdexchangeSeller.v' class='invisible'><code>AdexchangeSeller</code></span></span><span id='variant.AdexchangeSellerReadOnly' class='variant'><span id='AdexchangeSellerReadOnly.v' class='invisible'><code>AdexchangeSellerReadOnly</code></span></span><span id='variant.AdminDataTransfer' class='variant'><span id='AdminDataTransfer.v' class='invisible'><code>AdminDataTransfer</code></span></span><span id='variant.AdminDataTransferReadOnly' class='variant'><span id='AdminDataTransferReadOnly.v' class='invisible'><code>AdminDataTransferReadOnly</code></span></span><span id='variant.AdminDirectoryCustomer' class='variant'><span id='AdminDirectoryCustomer.v' class='invisible'><code>AdminDirectoryCustomer</code></span></span><span id='variant.AdminDirectoryCustomerReadOnly' class='variant'><span id='AdminDirectoryCustomerReadOnly.v' class='invisible'><code>AdminDirectoryCustomerReadOnly</code></span></span><span id='variant.AdminDirectoryDeviceChromeOs' class='variant'><span id='AdminDirectoryDeviceChromeOs.v' class='invisible'><code>AdminDirectoryDeviceChromeOs</code></span></span><span id='variant.AdminDirectoryDeviceChromeOsReadOnly' class='variant'><span id='AdminDirectoryDeviceChromeOsReadOnly.v' class='invisible'><code>AdminDirectoryDeviceChromeOsReadOnly</code></span></span><span id='variant.AdminDirectoryDeviceMobile' class='variant'><span id='AdminDirectoryDeviceMobile.v' class='invisible'><code>AdminDirectoryDeviceMobile</code></span></span><span id='variant.AdminDirectoryDeviceMobileAction' class='variant'><span id='AdminDirectoryDeviceMobileAction.v' class='invisible'><code>AdminDirectoryDeviceMobileAction</code></span></span><span id='variant.AdminDirectoryDeviceMobileReadOnly' class='variant'><span id='AdminDirectoryDeviceMobileReadOnly.v' class='invisible'><code>AdminDirectoryDeviceMobileReadOnly</code></span></span><span id='variant.AdminDirectoryDomain' class='variant'><span id='AdminDirectoryDomain.v' class='invisible'><code>AdminDirectoryDomain</code></span></span><span id='variant.AdminDirectoryDomainReadOnly' class='variant'><span id='AdminDirectoryDomainReadOnly.v' class='invisible'><code>AdminDirectoryDomainReadOnly</code></span></span><span id='variant.AdminDirectoryGroup' class='variant'><span id='AdminDirectoryGroup.v' class='invisible'><code>AdminDirectoryGroup</code></span></span><span id='variant.AdminDirectoryGroupMember' class='variant'><span id='AdminDirectoryGroupMember.v' class='invisible'><code>AdminDirectoryGroupMember</code></span></span><span id='variant.AdminDirectoryGroupMemberReadOnly' class='variant'><span id='AdminDirectoryGroupMemberReadOnly.v' class='invisible'><code>AdminDirectoryGroupMemberReadOnly</code></span></span><span id='variant.AdminDirectoryGroupReadOnly' class='variant'><span id='AdminDirectoryGroupReadOnly.v' class='invisible'><code>AdminDirectoryGroupReadOnly</code></span></span><span id='variant.AdminDirectoryNotifications' class='variant'><span id='AdminDirectoryNotifications.v' class='invisible'><code>AdminDirectoryNotifications</code></span></span><span id='variant.AdminDirectoryOrgUnit' class='variant'><span id='AdminDirectoryOrgUnit.v' class='invisible'><code>AdminDirectoryOrgUnit</code></span></span><span id='variant.AdminDirectoryOrgUnitReadOnly' class='variant'><span id='AdminDirectoryOrgUnitReadOnly.v' class='invisible'><code>AdminDirectoryOrgUnitReadOnly</code></span></span><span id='variant.AdminDirectoryResourceCalendar' class='variant'><span id='AdminDirectoryResourceCalendar.v' class='invisible'><code>AdminDirectoryResourceCalendar</code></span></span><span id='variant.AdminDirectoryResourceCalendarReadOnly' class='variant'><span id='AdminDirectoryResourceCalendarReadOnly.v' class='invisible'><code>AdminDirectoryResourceCalendarReadOnly</code></span></span><span id='variant.AdminDirectoryRoleManagement' class='variant'><span id='AdminDirectoryRoleManagement.v' class='invisible'><code>AdminDirectoryRoleManagement</code></span></span><span id='variant.AdminDirectoryRoleManagementReadOnly' class='variant'><span id='AdminDirectoryRoleManagementReadOnly.v' class='invisible'><code>AdminDirectoryRoleManagementReadOnly</code></span></span><span id='variant.AdminDirectoryUser' class='variant'><span id='AdminDirectoryUser.v' class='invisible'><code>AdminDirectoryUser</code></span></span><span id='variant.AdminDirectoryUserAlias' class='variant'><span id='AdminDirectoryUserAlias.v' class='invisible'><code>AdminDirectoryUserAlias</code></span></span><span id='variant.AdminDirectoryUserAliasReadOnly' class='variant'><span id='AdminDirectoryUserAliasReadOnly.v' class='invisible'><code>AdminDirectoryUserAliasReadOnly</code></span></span><span id='variant.AdminDirectoryUserReadOnly' class='variant'><span id='AdminDirectoryUserReadOnly.v' class='invisible'><code>AdminDirectoryUserReadOnly</code></span></span><span id='variant.AdminDirectoryUserSchema' class='variant'><span id='AdminDirectoryUserSchema.v' class='invisible'><code>AdminDirectoryUserSchema</code></span></span><span id='variant.AdminDirectoryUserSchemaReadOnly' class='variant'><span id='AdminDirectoryUserSchemaReadOnly.v' class='invisible'><code>AdminDirectoryUserSchemaReadOnly</code></span></span><span id='variant.AdminDirectoryUserSecurity' class='variant'><span id='AdminDirectoryUserSecurity.v' class='invisible'><code>AdminDirectoryUserSecurity</code></span></span><span id='variant.AdminReportsAuditReadOnly' class='variant'><span id='AdminReportsAuditReadOnly.v' class='invisible'><code>AdminReportsAuditReadOnly</code></span></span><span id='variant.AdminReportsUsageReadOnly' class='variant'><span id='AdminReportsUsageReadOnly.v' class='invisible'><code>AdminReportsUsageReadOnly</code></span></span><span id='variant.AdSense' class='variant'><span id='AdSense.v' class='invisible'><code>AdSense</code></span></span><span id='variant.AdSenseHost' class='variant'><span id='AdSenseHost.v' class='invisible'><code>AdSenseHost</code></span></span><span id='variant.AdSenseReadOnly' class='variant'><span id='AdSenseReadOnly.v' class='invisible'><code>AdSenseReadOnly</code></span></span><span id='variant.Analytics' class='variant'><span id='Analytics.v' class='invisible'><code>Analytics</code></span></span><span id='variant.AnalyticsEdit' class='variant'><span id='AnalyticsEdit.v' class='invisible'><code>AnalyticsEdit</code></span></span><span id='variant.AnalyticsManageUsers' class='variant'><span id='AnalyticsManageUsers.v' class='invisible'><code>AnalyticsManageUsers</code></span></span><span id='variant.AnalyticsManageUsersReadOnly' class='variant'><span id='AnalyticsManageUsersReadOnly.v' class='invisible'><code>AnalyticsManageUsersReadOnly</code></span></span><span id='variant.AnalyticsProvision' class='variant'><span id='AnalyticsProvision.v' class='invisible'><code>AnalyticsProvision</code></span></span><span id='variant.AnalyticsReadOnly' class='variant'><span id='AnalyticsReadOnly.v' class='invisible'><code>AnalyticsReadOnly</code></span></span><span id='variant.AndroidEnterprise' class='variant'><span id='AndroidEnterprise.v' class='invisible'><code>AndroidEnterprise</code></span></span><span id='variant.AndroidPublisher' class='variant'><span id='AndroidPublisher.v' class='invisible'><code>AndroidPublisher</code></span></span><span id='variant.AppEngineAdmin' class='variant'><span id='AppEngineAdmin.v' class='invisible'><code>AppEngineAdmin</code></span></span><span id='variant.AppsGroupsMigration' class='variant'><span id='AppsGroupsMigration.v' class='invisible'><code>AppsGroupsMigration</code></span></span><span id='variant.AppsGroupsSettings' class='variant'><span id='AppsGroupsSettings.v' class='invisible'><code>AppsGroupsSettings</code></span></span><span id='variant.AppsLicensing' class='variant'><span id='AppsLicensing.v' class='invisible'><code>AppsLicensing</code></span></span><span id='variant.AppsOrder' class='variant'><span id='AppsOrder.v' class='invisible'><code>AppsOrder</code></span></span><span id='variant.AppsOrderReadOnly' class='variant'><span id='AppsOrderReadOnly.v' class='invisible'><code>AppsOrderReadOnly</code></span></span><span id='variant.AppState' class='variant'><span id='AppState.v' class='invisible'><code>AppState</code></span></span><span id='variant.BigQuery' class='variant'><span id='BigQuery.v' class='invisible'><code>BigQuery</code></span></span><span id='variant.BigQueryInsertdata' class='variant'><span id='BigQueryInsertdata.v' class='invisible'><code>BigQueryInsertdata</code></span></span><span id='variant.Blogger' class='variant'><span id='Blogger.v' class='invisible'><code>Blogger</code></span></span><span id='variant.BloggerReadOnly' class='variant'><span id='BloggerReadOnly.v' class='invisible'><code>BloggerReadOnly</code></span></span><span id='variant.Books' class='variant'><span id='Books.v' class='invisible'><code>Books</code></span></span><span id='variant.Calendar' class='variant'><span id='Calendar.v' class='invisible'><code>Calendar</code></span></span><span id='variant.CalendarFeeds' class='variant'><span id='CalendarFeeds.v' class='invisible'><code>CalendarFeeds</code></span></span><span id='variant.CalendarReadOnly' class='variant'><span id='CalendarReadOnly.v' class='invisible'><code>CalendarReadOnly</code></span></span><span id='variant.ClassroomCourses' class='variant'><span id='ClassroomCourses.v' class='invisible'><code>ClassroomCourses</code></span></span><span id='variant.ClassroomCoursesReadOnly' class='variant'><span id='ClassroomCoursesReadOnly.v' class='invisible'><code>ClassroomCoursesReadOnly</code></span></span><span id='variant.ClassroomCourseworkMe' class='variant'><span id='ClassroomCourseworkMe.v' class='invisible'><code>ClassroomCourseworkMe</code></span></span><span id='variant.ClassroomCourseworkMeReadOnly' class='variant'><span id='ClassroomCourseworkMeReadOnly.v' class='invisible'><code>ClassroomCourseworkMeReadOnly</code></span></span><span id='variant.ClassroomCourseWorkReadOnly' class='variant'><span id='ClassroomCourseWorkReadOnly.v' class='invisible'><code>ClassroomCourseWorkReadOnly</code></span></span><span id='variant.ClassroomCourseworkStudents' class='variant'><span id='ClassroomCourseworkStudents.v' class='invisible'><code>ClassroomCourseworkStudents</code></span></span><span id='variant.ClassroomCourseworkStudentsReadOnly' class='variant'><span id='ClassroomCourseworkStudentsReadOnly.v' class='invisible'><code>ClassroomCourseworkStudentsReadOnly</code></span></span><span id='variant.ClassroomProfileEmails' class='variant'><span id='ClassroomProfileEmails.v' class='invisible'><code>ClassroomProfileEmails</code></span></span><span id='variant.ClassroomProfilePhotos' class='variant'><span id='ClassroomProfilePhotos.v' class='invisible'><code>ClassroomProfilePhotos</code></span></span><span id='variant.ClassroomRosters' class='variant'><span id='ClassroomRosters.v' class='invisible'><code>ClassroomRosters</code></span></span><span id='variant.ClassroomRostersReadOnly' class='variant'><span id='ClassroomRostersReadOnly.v' class='invisible'><code>ClassroomRostersReadOnly</code></span></span><span id='variant.ClassroomStudentSubmissionsMeReadOnly' class='variant'><span id='ClassroomStudentSubmissionsMeReadOnly.v' class='invisible'><code>ClassroomStudentSubmissionsMeReadOnly</code></span></span><span id='variant.ClassroomStudentSubmissionsStudentsReadOnly' class='variant'><span id='ClassroomStudentSubmissionsStudentsReadOnly.v' class='invisible'><code>ClassroomStudentSubmissionsStudentsReadOnly</code></span></span><span id='variant.CloudDebugger' class='variant'><span id='CloudDebugger.v' class='invisible'><code>CloudDebugger</code></span></span><span id='variant.CloudPlatform' class='variant'><span id='CloudPlatform.v' class='invisible'><code>CloudPlatform</code></span></span><span id='variant.CloudPlatformReadOnly' class='variant'><span id='CloudPlatformReadOnly.v' class='invisible'><code>CloudPlatformReadOnly</code></span></span><span id='variant.CloudRuntimeConfig' class='variant'><span id='CloudRuntimeConfig.v' class='invisible'><code>CloudRuntimeConfig</code></span></span><span id='variant.CloudUserAccounts' class='variant'><span id='CloudUserAccounts.v' class='invisible'><code>CloudUserAccounts</code></span></span><span id='variant.CloudUserAccountsReadOnly' class='variant'><span id='CloudUserAccountsReadOnly.v' class='invisible'><code>CloudUserAccountsReadOnly</code></span></span><span id='variant.Compute' class='variant'><span id='Compute.v' class='invisible'><code>Compute</code></span></span><span id='variant.ComputeReadOnly' class='variant'><span id='ComputeReadOnly.v' class='invisible'><code>ComputeReadOnly</code></span></span><span id='variant.Contacts' class='variant'><span id='Contacts.v' class='invisible'><code>Contacts</code></span></span><span id='variant.ContactsReadOnly' class='variant'><span id='ContactsReadOnly.v' class='invisible'><code>ContactsReadOnly</code></span></span><span id='variant.Content' class='variant'><span id='Content.v' class='invisible'><code>Content</code></span></span><span id='variant.DataStore' class='variant'><span id='DataStore.v' class='invisible'><code>DataStore</code></span></span><span id='variant.Ddmconversions' class='variant'><span id='Ddmconversions.v' class='invisible'><code>Ddmconversions</code></span></span><span id='variant.DevStorageFullControl' class='variant'><span id='DevStorageFullControl.v' class='invisible'><code>DevStorageFullControl</code></span></span><span id='variant.DevStorageReadOnly' class='variant'><span id='DevStorageReadOnly.v' class='invisible'><code>DevStorageReadOnly</code></span></span><span id='variant.DevStorageReadWrite' class='variant'><span id='DevStorageReadWrite.v' class='invisible'><code>DevStorageReadWrite</code></span></span><span id='variant.Dfareporting' class='variant'><span id='Dfareporting.v' class='invisible'><code>Dfareporting</code></span></span><span id='variant.Dfatrafficking' class='variant'><span id='Dfatrafficking.v' class='invisible'><code>Dfatrafficking</code></span></span><span id='variant.DoubleclickSearch' class='variant'><span id='DoubleclickSearch.v' class='invisible'><code>DoubleclickSearch</code></span></span><span id='variant.Drive' class='variant'><span id='Drive.v' class='invisible'><code>Drive</code></span></span><span id='variant.DriveAppdata' class='variant'><span id='DriveAppdata.v' class='invisible'><code>DriveAppdata</code></span></span><span id='variant.DriveFile' class='variant'><span id='DriveFile.v' class='invisible'><code>DriveFile</code></span></span><span id='variant.DriveMetadata' class='variant'><span id='DriveMetadata.v' class='invisible'><code>DriveMetadata</code></span></span><span id='variant.DriveMetadataReadOnly' class='variant'><span id='DriveMetadataReadOnly.v' class='invisible'><code>DriveMetadataReadOnly</code></span></span><span id='variant.DrivePhotosReadOnly' class='variant'><span id='DrivePhotosReadOnly.v' class='invisible'><code>DrivePhotosReadOnly</code></span></span><span id='variant.DriveReadOnly' class='variant'><span id='DriveReadOnly.v' class='invisible'><code>DriveReadOnly</code></span></span><span id='variant.DriveScripts' class='variant'><span id='DriveScripts.v' class='invisible'><code>DriveScripts</code></span></span><span id='variant.Firebase' class='variant'><span id='Firebase.v' class='invisible'><code>Firebase</code></span></span><span id='variant.FirebaseReadOnly' class='variant'><span id='FirebaseReadOnly.v' class='invisible'><code>FirebaseReadOnly</code></span></span><span id='variant.FitnessActivityRead' class='variant'><span id='FitnessActivityRead.v' class='invisible'><code>FitnessActivityRead</code></span></span><span id='variant.FitnessActivityWrite' class='variant'><span id='FitnessActivityWrite.v' class='invisible'><code>FitnessActivityWrite</code></span></span><span id='variant.FitnessBodyRead' class='variant'><span id='FitnessBodyRead.v' class='invisible'><code>FitnessBodyRead</code></span></span><span id='variant.FitnessBodyWrite' class='variant'><span id='FitnessBodyWrite.v' class='invisible'><code>FitnessBodyWrite</code></span></span><span id='variant.FitnessLocationRead' class='variant'><span id='FitnessLocationRead.v' class='invisible'><code>FitnessLocationRead</code></span></span><span id='variant.FitnessLocationWrite' class='variant'><span id='FitnessLocationWrite.v' class='invisible'><code>FitnessLocationWrite</code></span></span><span id='variant.FitnessNutritionRead' class='variant'><span id='FitnessNutritionRead.v' class='invisible'><code>FitnessNutritionRead</code></span></span><span id='variant.FitnessNutritionWrite' class='variant'><span id='FitnessNutritionWrite.v' class='invisible'><code>FitnessNutritionWrite</code></span></span><span id='variant.Forms' class='variant'><span id='Forms.v' class='invisible'><code>Forms</code></span></span><span id='variant.FormsCurrentOnly' class='variant'><span id='FormsCurrentOnly.v' class='invisible'><code>FormsCurrentOnly</code></span></span><span id='variant.FusionTables' class='variant'><span id='FusionTables.v' class='invisible'><code>FusionTables</code></span></span><span id='variant.FusionTablesReadOnly' class='variant'><span id='FusionTablesReadOnly.v' class='invisible'><code>FusionTablesReadOnly</code></span></span><span id='variant.Games' class='variant'><span id='Games.v' class='invisible'><code>Games</code></span></span><span id='variant.Genomics' class='variant'><span id='Genomics.v' class='invisible'><code>Genomics</code></span></span><span id='variant.GenomicsReadOnly' class='variant'><span id='GenomicsReadOnly.v' class='invisible'><code>GenomicsReadOnly</code></span></span><span id='variant.GlassLocation' class='variant'><span id='GlassLocation.v' class='invisible'><code>GlassLocation</code></span></span><span id='variant.GlassTimeline' class='variant'><span id='GlassTimeline.v' class='invisible'><code>GlassTimeline</code></span></span><span id='variant.Gmail' class='variant'><span id='Gmail.v' class='invisible'><code>Gmail</code></span></span><span id='variant.GmailCompose' class='variant'><span id='GmailCompose.v' class='invisible'><code>GmailCompose</code></span></span><span id='variant.GmailInsert' class='variant'><span id='GmailInsert.v' class='invisible'><code>GmailInsert</code></span></span><span id='variant.GmailLabels' class='variant'><span id='GmailLabels.v' class='invisible'><code>GmailLabels</code></span></span><span id='variant.GmailMetadata' class='variant'><span id='GmailMetadata.v' class='invisible'><code>GmailMetadata</code></span></span><span id='variant.GmailModify' class='variant'><span id='GmailModify.v' class='invisible'><code>GmailModify</code></span></span><span id='variant.GmailReadOnly' class='variant'><span id='GmailReadOnly.v' class='invisible'><code>GmailReadOnly</code></span></span><span id='variant.GmailSend' class='variant'><span id='GmailSend.v' class='invisible'><code>GmailSend</code></span></span><span id='variant.GmailSettingsBasic' class='variant'><span id='GmailSettingsBasic.v' class='invisible'><code>GmailSettingsBasic</code></span></span><span id='variant.GmailSettingsSharing' class='variant'><span id='GmailSettingsSharing.v' class='invisible'><code>GmailSettingsSharing</code></span></span><span id='variant.Groups' class='variant'><span id='Groups.v' class='invisible'><code>Groups</code></span></span><span id='variant.LoggingAdmin' class='variant'><span id='LoggingAdmin.v' class='invisible'><code>LoggingAdmin</code></span></span><span id='variant.LoggingRead' class='variant'><span id='LoggingRead.v' class='invisible'><code>LoggingRead</code></span></span><span id='variant.LoggingWrite' class='variant'><span id='LoggingWrite.v' class='invisible'><code>LoggingWrite</code></span></span><span id='variant.M8Feeds' class='variant'><span id='M8Feeds.v' class='invisible'><code>M8Feeds</code></span></span><span id='variant.ManufacturerCenter' class='variant'><span id='ManufacturerCenter.v' class='invisible'><code>ManufacturerCenter</code></span></span><span id='variant.Monitoring' class='variant'><span id='Monitoring.v' class='invisible'><code>Monitoring</code></span></span><span id='variant.MonitoringRead' class='variant'><span id='MonitoringRead.v' class='invisible'><code>MonitoringRead</code></span></span><span id='variant.MonitoringWrite' class='variant'><span id='MonitoringWrite.v' class='invisible'><code>MonitoringWrite</code></span></span><span id='variant.NdevClouddnsReadOnly' class='variant'><span id='NdevClouddnsReadOnly.v' class='invisible'><code>NdevClouddnsReadOnly</code></span></span><span id='variant.NdevClouddnsReadwrite' class='variant'><span id='NdevClouddnsReadwrite.v' class='invisible'><code>NdevClouddnsReadwrite</code></span></span><span id='variant.NdevCloudman' class='variant'><span id='NdevCloudman.v' class='invisible'><code>NdevCloudman</code></span></span><span id='variant.NdevCloudmanReadOnly' class='variant'><span id='NdevCloudmanReadOnly.v' class='invisible'><code>NdevCloudmanReadOnly</code></span></span><span id='variant.PlayMoviesPartnerReadOnly' class='variant'><span id='PlayMoviesPartnerReadOnly.v' class='invisible'><code>PlayMoviesPartnerReadOnly</code></span></span><span id='variant.PlusCirclesRead' class='variant'><span id='PlusCirclesRead.v' class='invisible'><code>PlusCirclesRead</code></span></span><span id='variant.PlusCirclesWrite' class='variant'><span id='PlusCirclesWrite.v' class='invisible'><code>PlusCirclesWrite</code></span></span><span id='variant.PlusLogin' class='variant'><span id='PlusLogin.v' class='invisible'><code>PlusLogin</code></span></span><span id='variant.PlusMe' class='variant'><span id='PlusMe.v' class='invisible'><code>PlusMe</code></span></span><span id='variant.PlusMediaUpload' class='variant'><span id='PlusMediaUpload.v' class='invisible'><code>PlusMediaUpload</code></span></span><span id='variant.PlusProfilesRead' class='variant'><span id='PlusProfilesRead.v' class='invisible'><code>PlusProfilesRead</code></span></span><span id='variant.PlusStreamRead' class='variant'><span id='PlusStreamRead.v' class='invisible'><code>PlusStreamRead</code></span></span><span id='variant.PlusStreamWrite' class='variant'><span id='PlusStreamWrite.v' class='invisible'><code>PlusStreamWrite</code></span></span><span id='variant.Prediction' class='variant'><span id='Prediction.v' class='invisible'><code>Prediction</code></span></span><span id='variant.Presentations' class='variant'><span id='Presentations.v' class='invisible'><code>Presentations</code></span></span><span id='variant.PresentationsReadOnly' class='variant'><span id='PresentationsReadOnly.v' class='invisible'><code>PresentationsReadOnly</code></span></span><span id='variant.PubSub' class='variant'><span id='PubSub.v' class='invisible'><code>PubSub</code></span></span><span id='variant.ReplicaPool' class='variant'><span id='ReplicaPool.v' class='invisible'><code>ReplicaPool</code></span></span><span id='variant.ReplicaPoolReadOnly' class='variant'><span id='ReplicaPoolReadOnly.v' class='invisible'><code>ReplicaPoolReadOnly</code></span></span><span id='variant.Servicecontrol' class='variant'><span id='Servicecontrol.v' class='invisible'><code>Servicecontrol</code></span></span><span id='variant.ServiceManagement' class='variant'><span id='ServiceManagement.v' class='invisible'><code>ServiceManagement</code></span></span><span id='variant.ServiceManagementReadOnly' class='variant'><span id='ServiceManagementReadOnly.v' class='invisible'><code>ServiceManagementReadOnly</code></span></span><span id='variant.SiteVerification' class='variant'><span id='SiteVerification.v' class='invisible'><code>SiteVerification</code></span></span><span id='variant.SiteVerificationVerifyOnly' class='variant'><span id='SiteVerificationVerifyOnly.v' class='invisible'><code>SiteVerificationVerifyOnly</code></span></span><span id='variant.SpreadSheets' class='variant'><span id='SpreadSheets.v' class='invisible'><code>SpreadSheets</code></span></span><span id='variant.SpreadSheetsReadOnly' class='variant'><span id='SpreadSheetsReadOnly.v' class='invisible'><code>SpreadSheetsReadOnly</code></span></span><span id='variant.SQLServiceAdmin' class='variant'><span id='SQLServiceAdmin.v' class='invisible'><code>SQLServiceAdmin</code></span></span><span id='variant.TagManagerDeleteContainers' class='variant'><span id='TagManagerDeleteContainers.v' class='invisible'><code>TagManagerDeleteContainers</code></span></span><span id='variant.TagManagerEditContainers' class='variant'><span id='TagManagerEditContainers.v' class='invisible'><code>TagManagerEditContainers</code></span></span><span id='variant.TagManagerEditContainerVersions' class='variant'><span id='TagManagerEditContainerVersions.v' class='invisible'><code>TagManagerEditContainerVersions</code></span></span><span id='variant.TagManagerManageAccounts' class='variant'><span id='TagManagerManageAccounts.v' class='invisible'><code>TagManagerManageAccounts</code></span></span><span id='variant.TagManagerManageUsers' class='variant'><span id='TagManagerManageUsers.v' class='invisible'><code>TagManagerManageUsers</code></span></span><span id='variant.TagManagerPublish' class='variant'><span id='TagManagerPublish.v' class='invisible'><code>TagManagerPublish</code></span></span><span id='variant.TagManagerReadOnly' class='variant'><span id='TagManagerReadOnly.v' class='invisible'><code>TagManagerReadOnly</code></span></span><span id='variant.TaskQueue' class='variant'><span id='TaskQueue.v' class='invisible'><code>TaskQueue</code></span></span><span id='variant.TaskQueueConsumer' class='variant'><span id='TaskQueueConsumer.v' class='invisible'><code>TaskQueueConsumer</code></span></span><span id='variant.Tasks' class='variant'><span id='Tasks.v' class='invisible'><code>Tasks</code></span></span><span id='variant.TasksReadOnly' class='variant'><span id='TasksReadOnly.v' class='invisible'><code>TasksReadOnly</code></span></span><span id='variant.TraceAppend' class='variant'><span id='TraceAppend.v' class='invisible'><code>TraceAppend</code></span></span><span id='variant.TraceReadOnly' class='variant'><span id='TraceReadOnly.v' class='invisible'><code>TraceReadOnly</code></span></span><span id='variant.URLShortener' class='variant'><span id='URLShortener.v' class='invisible'><code>URLShortener</code></span></span><span id='variant.UserAddressesRead' class='variant'><span id='UserAddressesRead.v' class='invisible'><code>UserAddressesRead</code></span></span><span id='variant.UserBirthdayRead' class='variant'><span id='UserBirthdayRead.v' class='invisible'><code>UserBirthdayRead</code></span></span><span id='variant.UserEmailsRead' class='variant'><span id='UserEmailsRead.v' class='invisible'><code>UserEmailsRead</code></span></span><span id='variant.UserInfoEmail' class='variant'><span id='UserInfoEmail.v' class='invisible'><code>UserInfoEmail</code></span></span><span id='variant.UserInfoProfile' class='variant'><span id='UserInfoProfile.v' class='invisible'><code>UserInfoProfile</code></span></span><span id='variant.UserLocationBeaconRegistry' class='variant'><span id='UserLocationBeaconRegistry.v' class='invisible'><code>UserLocationBeaconRegistry</code></span></span><span id='variant.UserPhoneNumbersRead' class='variant'><span id='UserPhoneNumbersRead.v' class='invisible'><code>UserPhoneNumbersRead</code></span></span><span id='variant.WebMasters' class='variant'><span id='WebMasters.v' class='invisible'><code>WebMasters</code></span></span><span id='variant.WebMastersReadOnly' class='variant'><span id='WebMastersReadOnly.v' class='invisible'><code>WebMastersReadOnly</code></span></span><span id='variant.YouTube' class='variant'><span id='YouTube.v' class='invisible'><code>YouTube</code></span></span><span id='variant.YouTubeAnalyticsMonetaryReadOnly' class='variant'><span id='YouTubeAnalyticsMonetaryReadOnly.v' class='invisible'><code>YouTubeAnalyticsMonetaryReadOnly</code></span></span><span id='variant.YouTubeAnalyticsReadOnly' class='variant'><span id='YouTubeAnalyticsReadOnly.v' class='invisible'><code>YouTubeAnalyticsReadOnly</code></span></span><span id='variant.YouTubeForceSSL' class='variant'><span id='YouTubeForceSSL.v' class='invisible'><code>YouTubeForceSSL</code></span></span><span id='variant.YouTubepartner' class='variant'><span id='YouTubepartner.v' class='invisible'><code>YouTubepartner</code></span></span><span id='variant.YouTubepartnerChannelAudit' class='variant'><span id='YouTubepartnerChannelAudit.v' class='invisible'><code>YouTubepartnerChannelAudit</code></span></span><span id='variant.YouTubeReadOnly' class='variant'><span id='YouTubeReadOnly.v' class='invisible'><code>YouTubeReadOnly</code></span></span><span id='variant.YouTubeUpload' class='variant'><span id='YouTubeUpload.v' class='invisible'><code>YouTubeUpload</code></span></span><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl <a class='enum' href='../../goauth/scopes/enum.Scope.html' title='goauth::scopes::Scope'>Scope</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/goauth/scopes.rs.html#205-604' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.url' class='method'><span id='url.v' class='invisible'><code>fn <a href='#method.url' class='fnname'>url</a>(&amp;self) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></span></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "goauth";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>
